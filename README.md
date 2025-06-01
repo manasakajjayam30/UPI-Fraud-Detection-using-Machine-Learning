@@ -9,12 +9,12 @@ This project focuses on developing a machine learning model to detect fraudulent
 The repository contains the following files:
 
 - `UPI.py`: [Provide a brief description of what this Python file does. For example: "This script likely contains the machine learning model implementation, training process, and/or data preprocessing steps."]
-- `UPI.csv`: [Provide a brief description of this CSV file. For example: "This CSV file contains the dataset of UPI transactions used for training and evaluating the fraud detection model. It includes features such as transaction type, amount, sender/receiver details, and flags indicating if a transaction is fraudulent."]
+- `upi.7z`: This is a compressed archive (7z format) containing the dataset of UPI transactions used for training and evaluating the fraud detection model (`UPI.csv`). Due to file size limitations, the dataset has been compressed.
 - `README.md`: This file, providing an overview of the project.
 
 ## Dataset
 
-The project utilizes the `UPI.csv` dataset, which includes the following columns:
+The dataset for this project, `UPI.csv`, is provided in a compressed format (`upi.7z`). You will need to extract this archive to access the CSV file, which includes the following columns:
 
 - `step`: [Brief description of the 'step' column]
 - `type`: [Brief description of the 'type' column, e.g., transaction type like 'CASH-IN', 'CASH-OUT', 'TRANSFER', etc.]
@@ -32,7 +32,7 @@ The project utilizes the `UPI.csv` dataset, which includes the following columns
 
 The main Python script, `UPI.py`, likely contains the implementation of the machine learning model. You might find code for:
 
-- Data loading and preprocessing
+- Data loading and preprocessing (you'll need to include steps to extract the data from `upi.7z`)
 - Feature engineering
 - Model selection and training
 - Model evaluation
@@ -43,15 +43,16 @@ The main Python script, `UPI.py`, likely contains the implementation of the mach
 To run this project:
 
 1.  Clone the repository to your local machine.
-2.  Ensure you have the necessary Python libraries installed (e.g., pandas, scikit-learn). You can install them using pip:
+2.  **Extract the `UPI.csv` file from the `upi.7z` archive.** You will need a program that supports the 7z format (e.g., 7-Zip).
+3.  Ensure you have the necessary Python libraries installed (e.g., pandas, scikit-learn). You can install them using pip:
     ```bash
     pip install pandas scikit-learn
     ```
-3.  Navigate to the project directory and run the `UPI.py` script:
+4.  Navigate to the project directory and run the `UPI.py` script:
     ```bash
     python UPI.py
     ```
-    [You might want to add more specific instructions here based on how your script is designed to run.]
+    [You might want to add more specific instructions here based on how your script is designed to run, especially regarding how it reads the `UPI.csv` file after extraction.]
 
 ## Potential Improvements
 
